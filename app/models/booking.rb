@@ -3,5 +3,5 @@ class Booking < ApplicationRecord
   belongs_to :paint
   validates :user, presence: true
   validates :paint, presence: true
-  validtes :datetime, presence: true
+  validates :datetime, presence: true
 end
