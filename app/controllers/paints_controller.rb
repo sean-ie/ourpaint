@@ -1,8 +1,13 @@
 class PaintsController < ApplicationController
   before_action :find_paint, only: [:update, :show, :destroy]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @paint = Paint.all
+  end
+
+  def show
+    @paint = Paint.find(params[:id])
   end
 
   def update
