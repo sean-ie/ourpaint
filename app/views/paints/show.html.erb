@@ -3,7 +3,8 @@
 
 
 <div class="nestedcard">
-  <h1>Pages#home</h1>
+  <h1><%= @paint.brand %></h1>
+  <%= cl_image_tag @paint.photo.key, height: 300, width: 400, crop: :fill  %>
   <p>Find me in app/views/pages/home.html.erb</p>
 </div>
 

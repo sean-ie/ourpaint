@@ -1,13 +1,17 @@
+<h1>Use this page to list your old paint for recycling!</h1>
 
-<div class="container">
 
+<div class="container paint-new">
 
-  <div class="nestedcard">
-    <h1>New</h1>
-    <p>Find me in app/views/pages/home.html.erb</p>
+  <div class="paint-new-form">
+    <h2>List some paint</h2>
+    <%= render "form", paint: @paint %>
   </div>
+  <div class="link-paint-new">
+    <%= link_to "Back", paints_path, class: "btn-red" %>
+  </div>
+</div>
 
 
-  <h1>Pages#home</h1>
 
 </div>
