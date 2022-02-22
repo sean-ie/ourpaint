@@ -1,29 +1,19 @@
+<div class="container-wide">
 
-<div class="container">
+<div class="content">
+  <div class="cards">
+      <% @paint.each do | paint | %>
+        <div >
+          <div class="card-horizontal">
+           <h4><%= paint.colour %></h4>
+           <h4><%= paint.brand %></h4>
+           <h4><%= paint.volume %></h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
-
-<div class="nestedcard">
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
-</div>
-
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+    <img id="map" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/18.7072,38.9963,1.05,0/600x800?access_token=pk.eyJ1IjoiZG1pbG9uIiwiYSI6ImNrdHlpejZ3eTFleGUybnA4N2Rwa2J2a24ifQ.O8GDpHfLESId83b0vaJCAA">
+  </div>
 
 </div>

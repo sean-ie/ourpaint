@@ -1,0 +1,12 @@
+<%= simple_form_for [ @paint ] do |f| %>
+  <%= f.input :brand, collection: ['Abigail Ahern', 'Annie Sloan', 'Auro', 'Bedec', 'Blackfriar', 'Chiselwood', 'Craig & Rose', 'Crown', 'Designers Guild', 'Dulux', 'EarthBorn',
+  'Ecos', 'Farrow & Ball', 'Fired Earth', 'Francescas Lime Wash', 'Johnstones', 'Laura Ashley', 'The Little Greene Paint Company', 'Nutshell Natural Paints', 'Paint by Conran', 'Paint & Paper Library', 'Rose of Jericho', 'Sanderson', 'Siecle', 'Zoffany'] %>
+  <%= f.input :colour, placeholder: 'For example...Twilight Dawn' %>
+  <%= f.input :volume, placeholder: 'For example...0.75l, 1.5' %>
+  <%= f.input :photo, as: :file, input_html: { multiple: true } %>
+  <br>
+  <br>
+  <%= f.submit "List Your Paint", class: "btn btn-success" %>
+  <br>
+  <br>
+<% end %>
