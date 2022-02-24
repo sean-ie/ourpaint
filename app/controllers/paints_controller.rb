@@ -1,4 +1,4 @@
-require "pry"
+  
 class PaintsController < ApplicationController
   before_action :find_paint, only: [:update, :show, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
