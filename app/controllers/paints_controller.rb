@@ -5,13 +5,6 @@ class PaintsController < ApplicationController
 
   def index
     @paint = Paint.all
-
-      @markers = @paint.geocoded.map do |paint|
-        {
-         lat: paint.latitude,
-         lng: paint.longitude
-        }
-    end
   end
 
   def show
