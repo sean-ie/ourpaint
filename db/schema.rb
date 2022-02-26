@@ -57,9 +57,10 @@ ActiveRecord::Schema.define(version: 2022_02_19_154946) do
     t.string "brand"
     t.string "colour"
     t.string "volume"
-    t.float "lat"
-    t.float "lng"
+    t.string "address"
     t.string "paint_image"
+    t.float "latitude"
+    t.float "longitude"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

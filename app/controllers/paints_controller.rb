@@ -1,10 +1,17 @@
-  
+
 class PaintsController < ApplicationController
   before_action :find_paint, only: [:update, :show, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
 
   def index
     @paint = Paint.all
+
+     @markers = @paint.geocoded.map do |paint|
+      {
+        lat: paint.latitude,
+        lng: paint.longitude
+      }
+    end
   end
 
   def show
