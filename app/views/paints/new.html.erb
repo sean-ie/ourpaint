@@ -1,13 +1,28 @@
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
 
-<div class="container">
+<h1>Fill in the form below to list your old paint</h1>
 
 
-  <div class="nestedcard">
-    <h1>New</h1>
-    <p>Find me in app/views/pages/home.html.erb</p>
+<div class="container paint-new">
+
+  <div class="paint-new-form">
+    <%= render "form", paint: @paint %>
   </div>
+  <div class="link-paint-new">
+    <%= link_to "Back", paints_path, class: "btn-red" %>
+  </div>
+</div>
 
 
-  <h1>Pages#home</h1>
 
 </div>
+</body>
+</html>
