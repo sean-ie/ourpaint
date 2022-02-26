@@ -1,29 +1,21 @@
+<div class="container-wide">
 
-<div class="container">
+<div class="content">
+  <div class="cards">
+      <% @paint.each do | paint | %>
+        <div >
+          <div class="card-horizontal">
+           <h4><%= paint.colour %></h4>
+           <h4><%= paint.brand %></h4>
+           <h4><%= paint.volume %></h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
-
-<div class="nestedcard">
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
-</div>
-
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+   <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
 </div>
