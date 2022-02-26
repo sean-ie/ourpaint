@@ -1,4 +1,4 @@
-  
+
 class PaintsController < ApplicationController
   before_action :find_paint, only: [:update, :show, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
@@ -9,6 +9,7 @@ class PaintsController < ApplicationController
 
   def show
     @paint = Paint.find(params[:id])
+    @booking = Booking.new
   end
 
   def new

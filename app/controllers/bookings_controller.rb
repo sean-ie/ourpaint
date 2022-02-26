@@ -9,6 +9,7 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
+    @paint = Paint.find(params[:paint_id])
   end
 
   def create
@@ -17,7 +18,7 @@ class BookingsController < ApplicationController
     @booking.paint = @paint
     @booking.user = current_user
     if @booking.save
-      redirect_to user_bookings_path(@user)
+      redirect_to paint_path(@paint)
     else
       render "form"
     end
