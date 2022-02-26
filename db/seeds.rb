@@ -92,7 +92,7 @@ paint6 = Paint.new(
   brand: "Leyland Trade",
   colour: "Hardwearing Matt White",
   volume: "2.5L",
-  address: "50 Park Lane, London",
+  address: "10 King's Road, London",
   user_id: user6.id,
 )
 
