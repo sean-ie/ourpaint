@@ -1,11 +1,10 @@
 //Create card classes here
 
 .container-wide {
- margin-top: 60px;
- padding: 0%;
+ background: rgba(255, 255, 255, .6);
+ margin: 6%;
  border-style: solid;
  border-color: purple;
- overflow: hidden;
 }
 
 .card {
@@ -15,7 +14,6 @@
   box-shadow: 0px 7px 10px rgba(black, 0.5);
   border-style: solid;
   border-color: rgb(3, 0, 0);
-  overflow: hidden;
   object-fit: cover;
   background-color: rgba(225, 225, 225, 0.6);
   justify-content: center;

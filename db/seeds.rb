@@ -58,3 +58,60 @@ paint3 = Paint.new(
 
 paint3.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1645288451/Frame_30_ay1xde.png'), filename: 'paint.png', content_type: 'image/png')
 paint3.save!
+
+user4 = User.create(email: Faker::Internet.email, password: 1234567)
+user4.save!
+
+paint4 = Paint.new(
+  brand: "Laura Ashley",
+  colour: "Soft Silver",
+  volume: "1L",
+  address: "22 Shaftesbury Avenue, London",
+  user_id: user4.id,
+)
+
+paint4.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1645733183/13134752-1014883683655481_ku2f2r.jpg'), filename: 'paint.png', content_type: 'image/png')
+paint4.save!
+
+user5 = User.create(email: Faker::Internet.email, password: 1234567)
+user5.save!
+
+paint5 = Paint.new(
+  brand: "Dulux",
+  colour: "Blush Pink",
+  volume: "0.5L",
+  address: "20 South Grove, London",
+  user_id: user5.id,
+)
+
+paint5.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1645733337/12819366-3454831967027127_hf8jeo.jpg'), filename: 'paint.png', content_type: 'image/png')
+paint5.save!
+
+
+user6 = User.create(email: Faker::Internet.email, password: 1234567)
+user6.save!
+
+paint6 = Paint.new(
+  brand: "Leyland Trade",
+  colour: "Hardwearing Matt White",
+  volume: "2.5L",
+  address: "10 King's Road, London",
+  user_id: user6.id,
+)
+
+paint6.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1645733471/leyland-trade-hardwearing-matt-custom-mixed-colours-size-10-litre-57290-p_eqv7xb.png'), filename: 'paint.png', content_type: 'image/png')
+paint6.save!
+
+user7 = User.create(email: Faker::Internet.email, password: 1234567)
+user7.save!
+
+paint7 = Paint.new(
+  brand: "Good Home",
+  colour: "Santa Cruz Metallic Effect",
+  volume: "1.2L",
+  address: "50 Lordship Lane, London",
+  user_id: user7.id,
+)
+
+paint7.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1645733558/goodhome-feature-wall-santa-cruz-metallic-effect-emulsion-paint-2l_3663602402480_02c_bq_iwh8ho.jpg'), filename: 'paint.png', content_type: 'image/png')
+paint7.save!
