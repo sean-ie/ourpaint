@@ -16,6 +16,7 @@ class PaintsController < ApplicationController
 
   def show
     @paint = Paint.find(params[:id])
+    @booking = Booking.new
   end
 
   def new
