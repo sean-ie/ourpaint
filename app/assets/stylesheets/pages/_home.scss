@@ -1,8 +1,67 @@
 // Specific CSS for your home-page
-.about-us-layout {
-  padding: 50px;
+// .about-us-layout {
+//   padding: 50px;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   align-content: center;
+// }
+
+.aboutus-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+  // border: solid;
+  // border-color: blue;
+  // background-image: image-url("brush-stroke.jpeg");
+  // background-size: contain;
+  // align-items: center;
+
+  .img-col {
+    // border: solid;
+    // border-color: aqua;
+    background-image: image-url("pexels-cottonbro.jpeg");
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    margin-left: 50px;
+  }
+
+  .text-col {
+    // border: solid;
+    // border-color: chartreuse;
+    max-width: 50%;
+  }
+}
+
+.aboutus-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  // border: solid;
+  // border-color: blue;
+
+  .img-col {
+    // border: solid;
+    // border-color: aqua;
+    background-image: image-url("paint-tins-used.jpeg");
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    margin-right: 50px;
+  }
+
+  .text-col {
+    // border: solid;
+    // border-color: chartreuse;
+    max-width: 50%;
+  }
+}
+
+.carousel-container {
+  // border: solid;
+  // border-color: blue;
+  margin-top: 30px;
 }
