@@ -1,12 +1,9 @@
 <div class="container">
-  <div class="form-wrapper" style="width: 800px; margin: 0 auto;">
+  <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
     <h2>Book your paint collection</h2>
-      <div class="container">
         <%= simple_form_for ([@paint, @booking]), html: { class: "d-flex flex-row" } do |f| %>
           <div class="col-xs-4">
             <%= f.input :date, as: :string, required: false, input_html: {class: "datepicker"} %>
-          </div>
-          <div class="col-sm-12 d-flex align-items-bottom">
             <%= f.submit "Book your collection", class: "btn btn-success" %>
           </div>
         <% end %>

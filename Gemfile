@@ -36,6 +36,7 @@ gem 'geocoder'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'flatpickr'
 gem 'faker'
 
 group :development, :test do

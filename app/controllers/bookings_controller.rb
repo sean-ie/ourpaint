@@ -20,7 +20,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to paint_path(@paint)
     else
-      render "form"
+      render "new"
     end
   end
 
