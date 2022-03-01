@@ -4,9 +4,11 @@ class PaintsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
 
   def index
-    @paint = Paint.all
+    postcode = params[:postcode]
 
-     @markers = @paint.geocoded.map do |paint|
+    @paints = Paint.near(postcode, 10)
+
+     @markers = @paints.geocoded.map do |paint|
       {
         lat: paint.latitude,
         lng: paint.longitude,
