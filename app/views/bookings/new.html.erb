@@ -9,10 +9,9 @@
       <div class="card-show-page-pic">
         <%= cl_image_tag(@paint.photo.key, width: 295, height: 200, crop: :fill) %>
       </div>
+      <div class="container-wide">
+        <%= render "form", booking: @booking %>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="container-wide">
-  <%= render "form", booking: @booking %>
 </div>
