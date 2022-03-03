@@ -6,9 +6,10 @@
         <div >
         <%= link_to paint_path(paint) do  %>
           <div class="card-horizontal">
-           <h4><%= paint.colour %></h4>
-           <h4><%= paint.brand %></h4>
-           <h4><%= paint.volume %></h4>
+           <h6><%= paint.colour %></h6>
+           <h6><%= paint.brand %></h6>
+           <h6><%= paint.volume %></h6>
+           <%= cl_image_tag(paint.photo.key, height: 100, width: 100, crop: :fill) %>
 
           </div>
           <% end %>
