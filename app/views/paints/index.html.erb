@@ -2,14 +2,16 @@
 
 <div class="content">
   <div class="cards">
-      <% @paint.each do | paint | %>
+      <% @paints.each do | paint | %>
         <div >
+        <%= link_to paint_path(paint) do  %>
           <div class="card-horizontal">
            <h4><%= paint.colour %></h4>
            <h4><%= paint.brand %></h4>
            <h4><%= paint.volume %></h4>
 
           </div>
+          <% end %>
         </div>
       <% end %>
     </div>
