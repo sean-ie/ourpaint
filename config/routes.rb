@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get "profile", to: "pages#profile"
-  get "booking", to: "bookings#show"
   resources :paints do
     resources :bookings, only: [:new, :create, :edit, :destroy]
   end
