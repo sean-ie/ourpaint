@@ -10,7 +10,9 @@
  h1 {
     color: white;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 150px;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 3px 3px 8px black;
   }
 
   p {
@@ -74,3 +76,13 @@
   .btn {
     padding: 15px 50px;
   }
+
+.search-bar {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  }
+
+ .search-form {
+  display: flex;
+ }
