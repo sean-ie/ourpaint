@@ -5,6 +5,7 @@ class BookingsController < ApplicationController
 
   def show
     @booking = Booking.find(params[:id])
+    @booking.paint = @paint
   end
 
   def new
@@ -23,9 +24,7 @@ class BookingsController < ApplicationController
       render "new"
     end
   end
-
-
-  end
+end
 
   def destroy
     @booking = Booking.find(params[:id])

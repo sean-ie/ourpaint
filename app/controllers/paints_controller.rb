@@ -37,8 +37,13 @@ class PaintsController < ApplicationController
     end
   end
 
+  def edit
+    @paint = Paint.find(params[:id])
+  end
+
   def update
     @paint.update(paint_params)
+    @paint.user = current_user
   end
 
   def destroy
