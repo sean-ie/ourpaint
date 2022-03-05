@@ -1,13 +1,15 @@
 
 <div class="banner-show">
 
-  <div class="nestedcard">
-    <h1><%= @paint.brand %></h1>
-    <p><%= @paint.colour %></p>
-    <%= cl_image_tag(@paint.photo.key, height: 300, width: 400, crop: :fill) %>
-    <p><%= @paint.volume %></p>
+  <div class="background-card">
+    <div class="nestedcard">
+      <h1><%= @paint.brand %></h1>
+      <p><%= @paint.colour %></p>
+      <%= cl_image_tag(@paint.photo.key, height: 300, width: 400, crop: :fill) %>
+      <p><%= @paint.volume %></p>
+    </div>
+    <div>
+     <%= link_to "Book this paint!", new_paint_booking_path(@paint), class: "btn btn-success" %>
+    </div>
   </div>
 
-  <div>
-  <%=  link_to "Book this paint!", new_paint_booking_path(@paint), class: "btn btn-success" %>
-  </div>
