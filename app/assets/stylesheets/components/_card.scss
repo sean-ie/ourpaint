@@ -1,10 +1,7 @@
 //Create card classes here
 
 .container-wide {
- background: rgba(255, 255, 255, .6);
- margin: 6%;
- border-style: solid;
- border-color: purple;
+ margin: 3%;
 }
 
 .card {
@@ -41,14 +38,17 @@
 }
 
 .card-horizontal {
+  display: flex;
+  justify-content: space-between;
   padding: 2px;
   margin: 1px;
-  width: 400px;
+  width: 350px;
   height: 100px;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
   overflow: hidden;
   object-fit: cover;
   background-color: white;
+  border-radius: 5px;
 }
 
 .card-horizontal > img {
