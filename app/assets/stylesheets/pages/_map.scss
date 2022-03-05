@@ -1,11 +1,6 @@
 .content {
   display: flex;
-}
-
-#map {
-  height: 100vh;
-  position: sticky;
-  top: 0;
+  height: 600px;
 }
 
 .cards {
@@ -13,7 +8,9 @@
   grid-template-columns: 1fr;
   grid-gap: 1px;
   padding: 5px;
-  flex-grow: 1;
+  flex: 1 0 auto;
+  overflow: scroll;
+  margin-right: 10px;
 }
 
 .mapboxgl-popup {
