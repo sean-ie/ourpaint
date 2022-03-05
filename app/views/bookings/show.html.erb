@@ -1,12 +1,11 @@
- <div class="card-product">
-  <%= @booking = Booking.find(params[:id]) %>
-    <div class="card-product-infos">
-        <h2><strong>Congratulations</strong>, you've made a booking!</h2>
-      </div>
-    </div>
+<div class="card-product">
+  <div class="card-product-infos">
+    <h2><strong>Congratulations</strong>, you've made a booking!</h2>
+  </div>
+</div>
 
 
-<%#= booking.paint.colour%>
-<%#= booking.paint.volume%>
-<%#= booking.paint.address%>
-<%#= booking.paint.photo%>
+<%= @booking.paint.colour%>
+<%= @booking.paint.volume%>
+<%= @booking.paint.address%>
+<%= cl_image_tag(@booking.paint.photo.key, height: 100, width: 100, crop: :fill) %>

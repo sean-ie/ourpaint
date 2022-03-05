@@ -5,7 +5,6 @@ class BookingsController < ApplicationController
 
   def show
     @booking = Booking.find(params[:id])
-    @booking.paint = @paint
   end
 
   def new
@@ -19,12 +18,12 @@ class BookingsController < ApplicationController
     @booking.paint = @paint
     @booking.user = current_user
     if @booking.save
-      redirect_to paint_path(@paint)
+      redirect_to booking_path(@booking)
     else
       render "new"
     end
   end
-end
+
 
   def destroy
     @booking = Booking.find(params[:id])
@@ -36,3 +35,4 @@ end
   def booking_params
     params.require(:booking).permit(:date, :paint_id, :user_id)
   end
+end
