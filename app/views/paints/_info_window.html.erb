@@ -1,2 +1,9 @@
-<p><%= paint.brand %></p>
-<p><%= paint.colour %></p>
+<div>
+        <%= link_to paint_path(paint) do  %>
+          <div>
+            <h6><%= paint.colour %></h6>
+            <h6><%= paint.brand %></h6>
+            <h6><%= paint.volume %></h6>
+           </div>
+           <% end %>
+           </div>

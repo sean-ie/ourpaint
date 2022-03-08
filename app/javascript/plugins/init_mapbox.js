@@ -18,17 +18,24 @@ const initMapbox = () => {
       center: [-74.5, 40],
       zoom: 9
     });
-      const markers = JSON.parse(mapElement.dataset.markers);
+    const markers = JSON.parse(mapElement.dataset.markers);
     markers.forEach((marker) => {
       const popup = new mapboxgl.Popup().setHTML(marker.info_window);
-    new mapboxgl.Marker()
+
+      const element = document.createElement('div');
+      console.log(marker.image_url)
+      element.className = 'marker';
+      element.style.backgroundImage = `url('${marker.image_url}')`;
+      element.style.backgroundSize = 'contain';
+      element.style.width = '25px';
+      element.style.height = '25px';
+
+    new mapboxgl.Marker(element)
       .setLngLat([ marker.lng, marker.lat ])
       .setPopup(popup)
       .addTo(map);
-  });
-  fitMapToMarkers(map, markers);
-  map.addControl(new mapboxgl.NavigationControl());
-  map.addControl(geocoder);
-}
+    });
+    fitMapToMarkers(map, markers);
+  }
 };
 export { initMapbox };

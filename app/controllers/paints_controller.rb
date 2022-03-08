@@ -12,7 +12,8 @@ class PaintsController < ApplicationController
       {
         lat: paint.latitude,
         lng: paint.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { paint: paint })
+        info_window: render_to_string(partial: "info_window", locals: { paint: paint }),
+        image_url: helpers.asset_url('paint_marker.svg')
       }
     end
   end
@@ -20,6 +21,14 @@ class PaintsController < ApplicationController
   def show
     @paint = Paint.find(params[:id])
     @booking = Booking.new
+
+    @markers =[
+      {
+        lat: @paint.latitude,
+        lng: @paint.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { paint: @paint }),
+        image_url: helpers.asset_url('paint_marker.svg')
+      }]
   end
 
   def new
