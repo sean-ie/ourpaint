@@ -1,6 +1,7 @@
 
 <div class="banner-show">
-  <div><h1 class="show-title-h2 top-align">Paint details</h1></div>
+ <div><h1 class="show-title-h2 top-align">Paint details</h1></div>
+  <div class="card-map">
     <div class="card-show">
       <div class="card-image"><%= cl_image_tag(@paint.photo.key, height: 300, width: 300, crop: :fill) %></div>
       <div class="card-text">
@@ -8,6 +9,7 @@
         <p><%= @paint.colour %></p>
         <p><%= @paint.address %></p>
         <p><%= @paint.volume %></p>
+        <%= link_to "Book this paint!", new_paint_booking_path(@paint), class: "btn btn-success" %>
       </div>
     </div>
     <div class="map-show">
@@ -16,7 +18,5 @@
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
-    <div>
-     <%= link_to "Book this paint!", new_paint_booking_path(@paint), class: "btn btn-success" %>
-    </div>
+  </div>
 </div>
