@@ -1,7 +1,9 @@
+<%= render "bookings/flash" %>
+
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-sm-3">
-      
+
 <%= simple_form_for [ @paint ] do |f| %>
   <%= f.input :brand, default: 'Pick from the dropdown list', collection: ['Pick from the list below', 'Abigail Ahern', 'Annie Sloan', 'Auro', 'Bedec', 'Blackfriar', 'Chiselwood', 'Craig & Rose', 'Crown', 'Designers Guild', 'Dulux', 'EarthBorn',
   'Ecos', 'Farrow & Ball', 'Fired Earth', 'Francescas Lime Wash', 'Johnstones', 'Laura Ashley', 'The Little Greene Paint Company', 'Nutshell Natural Paints', 'Paint by Conran', 'Paint & Paper Library', 'Rose of Jericho', 'Sanderson', 'Siecle', 'Zoffany'] %>
@@ -18,7 +20,7 @@
   <br>
   <br>
 <% end %>
- 
+
     </div>
   </div>
 </div>
