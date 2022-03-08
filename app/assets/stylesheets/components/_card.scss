@@ -60,3 +60,67 @@
   height: 250px;
   width: 250px;
 }
+
+.show-paint-card {
+  background-color: rgba(223, 226, 223, 0.7);
+  max-width: fit-content;
+  max-height: fit-content;
+  text-align: center;
+  border: solid;
+  border-color: blue;
+}
+
+.paint-info {
+  border: solid;
+  border-color: greenyellow;
+  width: 400px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+
+.map-show {
+  display: flex;
+  justify-content: space-between;
+  border: solid;
+  border-color: aqua;
+  width: 550px;
+  height: 550px;
+}
+
+.card-show {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 250px 250px;
+  grid-template-areas: "image" "text";
+
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 4px;
+  background: rgb(224, 214, 214);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+
+    .card-text p {
+    color: red;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .card-text h1 {
+    margin-top: 0px;
+    font-size: 28px;
+  }
+}
+.card-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+.card-text {
+  grid-area: text;
+  padding-top: 40px;
+  margin: 25px;
+}
