@@ -52,7 +52,8 @@
 .banner-show {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("white_canvas_background.jpeg");
   background-size: cover;
