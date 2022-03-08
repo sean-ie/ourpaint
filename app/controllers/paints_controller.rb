@@ -39,8 +39,12 @@ class PaintsController < ApplicationController
     @paint = Paint.new(paint_params)
     @paint.user = current_user
     if @paint.save
+
+      flash[:notice] = "Thanks for recycling your paint and saving the planet!"
+
+
       redirect_to paint_path(@paint)
-      flash[:message] = "Thanks for recycling your paint and saving the planet!"
+    
 
     else
       render :new
