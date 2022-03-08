@@ -39,8 +39,9 @@ class PaintsController < ApplicationController
     @paint = Paint.new(paint_params)
     @paint.user = current_user
     if @paint.save
-      flash[:success] = "Thanks for recycling your paint and saving the planet!"
       redirect_to paint_path(@paint)
+      flash[:message] = "Thanks for recycling your paint and saving the planet!"
+
     else
       render :new
     end
@@ -51,8 +52,10 @@ class PaintsController < ApplicationController
   end
 
   def update
+    @paint = Paint.find(params[:id])
     @paint.update(paint_params)
-    @paint.user = current_user
+    #@paint.user = current_user
+    redirect_to root_path
   end
 
   def destroy
@@ -66,6 +69,6 @@ class PaintsController < ApplicationController
   end
 
   def paint_params
-    params.require(:paint).permit(:brand, :colour, :volume, :photo)
+    params.require(:paint).permit(:brand, :colour, :volume, :photo, :address)
   end
 end
