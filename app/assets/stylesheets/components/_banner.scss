@@ -9,6 +9,7 @@
 
  h1 {
     color: white;
+    background-image: image("paint_splatter.jpeg");
     font-weight: bold;
     font-size: 150px;
     font-family: 'Permanent Marker', cursive;
@@ -53,24 +54,22 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("paint3.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("white_canvas_background.jpeg");
   background-size: cover;
   background-position: center;
 
 
-  h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 45px;
-  }
+  // h1 {
+  //   background-position: top;
+  // }
 
-  p {
-    color: white;
-    opacity: .8;
-    font-size: 25px;
-    font-weight: lighter;
-    margin-bottom: 30px;
-  }
+  // p {
+  //   color: white;
+  //   opacity: .8;
+  //   font-size: 25px;
+  //   font-weight: lighter;
+  //   margin-bottom: 30px;
+  // }
 }
 
   .btn {
