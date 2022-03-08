@@ -1,7 +1,10 @@
 import flatpickr from "flatpickr";
 
 const initFlatpickr = () => {
-  flatpickr(".datepicker", {});
+  flatpickr(".datepicker", {
+    enableTime: true,
+    minDate: "today",
+  });
 }
 
 export { initFlatpickr };

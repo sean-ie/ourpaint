@@ -1,15 +1,17 @@
 <div class="banner-bookings">
+
+<div class="container-wide">
   <div class="row">
     <div class="col-sm-12">
-      <div class="card-show-page">
+      <div class="">
         <h1><%= @paint.brand %></h1>
         <p><%= @paint.colour %></p>
         <p><%= @paint.volume %></p>
       </div>
-      <div class="card-show-page-pic">
+      <div class="">
         <%= cl_image_tag(@paint.photo.key, width: 295, height: 200, crop: :fill) %>
       </div>
-      <div class="container-wide">
+      <div class="booking-form">
         <%= render "form", booking: @booking %>
       </div>
     </div>
