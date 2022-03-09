@@ -28,16 +28,18 @@
 .banner-bookings {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("paint.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("paint_brush.jpeg");
   background-size: cover;
   background-position: center;
 
    h1 {
     color: white;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 80px;
+    text-shadow: 3px 3px 8px black;
   }
 
   p {

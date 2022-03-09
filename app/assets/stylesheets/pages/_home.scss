@@ -74,8 +74,9 @@
 }
 
 .carousel-small {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .home-about-h2 {
@@ -83,4 +84,31 @@
   font-weight: bold;
   font-size: 80px;
   font-family: 'Permanent Marker', cursive;
+}
+
+#carouselExampleControl {
+
+}
+
+.card-container {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  max-height: 300px;
+
+  img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.carousel-h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

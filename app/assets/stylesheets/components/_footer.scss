@@ -23,8 +23,11 @@
 //   top: 2px;
 // }
 
+.body {
+  min-height: 100vh;
+}
+
 .footer {
-  margin-top: 30px;
   background: black;
   display: flex;
   align-items: center;
@@ -33,6 +36,7 @@
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
 }
+
 .footer-links {
   display: flex;
   align-items: center;

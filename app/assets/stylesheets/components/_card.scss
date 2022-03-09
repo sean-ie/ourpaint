@@ -83,8 +83,6 @@
 .map-show {
   display: flex;
   justify-content: space-between;
-  border: solid;
-  border-color: aqua;
   width: 550px;
   height: 550px;
 }
@@ -129,4 +127,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.card-map-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
