@@ -57,13 +57,15 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <%= image_tag "matthew_pic.jpeg", class: "d-block h-65 w-100" %>
+
+            <%= image_tag "matthew_pic.jpg", class: "d-block w-100" %>
+
           </div>
           <div class="carousel-item">
-            <%= image_tag "lorraine_pic.jpeg", class: "d-block w-100" %>
+            <%= image_tag "lorraine_pic.jpg", class: "d-block w-100" %>
           </div>
           <div class="carousel-item">
-            <%= image_tag "pexels-cottonbro.jpeg", class: "d-block w-100" %>
+            <%= image_tag "pexels-cottonbro.jpg", class: "d-block w-100" %>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -83,16 +85,6 @@
 <br>
 <br>
 
-<div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-  </div>
-  <div>
-    <h2 class="footer-h2">Our Paint</h2>
-  </div>
-  <div class="footer-copyright">
-    © OurPaint-2022
+<%= render 'shared/footer' %>
   </div>
 </div>

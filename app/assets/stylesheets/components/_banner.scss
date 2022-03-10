@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("paint-tins-highview.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("paint-tins-highview.jpeg");
   background-size: cover;
   background-position: center;
 
@@ -60,6 +60,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("white_canvas_background.jpeg");
   background-size: cover;
   background-position: center;
+  margin-top: -150px;
 
 
   // h1 {
@@ -87,4 +88,13 @@
 
  .search-form {
   display: flex;
+ }
+
+
+ .login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
  }
