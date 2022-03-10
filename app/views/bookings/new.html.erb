@@ -1,19 +1,29 @@
 <div class="banner-bookings">
-
-<div class="container-wide">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="">
-        <h1><%= @paint.brand %></h1>
-        <p><%= @paint.colour %></p>
-        <p><%= @paint.volume %></p>
-      </div>
-      <div class="">
-        <%= cl_image_tag(@paint.photo.key, width: 295, height: 200, crop: :fill) %>
-      </div>
-      <div class="booking-form">
-        <%= render "form", booking: @booking %>
-      </div>
+  <div><h1 class="show-title-h2 top-align">Book your paint</h1></div>
+  <div class="card-show">
+    <div class="card-image"><%= cl_image_tag(@paint.photo.key, width: 300, height: 300, crop: :fill) %></div>
+        <div class="card-text">
+          <h1><%= @paint.brand %></h1>
+          <p><%= @paint.colour %></p>
+          <p><%= @paint.volume %></p>
+        </div>
+        <div class="card-map">
+          <%= render "form", booking: @booking %>
+        </div>
     </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+  <div>
+    <h2 class="footer-h2">Our Paint</h2>
+  </div>
+  <div class="footer-copyright">
+    © OurPaint-2022
   </div>
 </div>
