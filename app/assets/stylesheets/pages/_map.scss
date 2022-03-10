@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  height: 600px;
+  height: 624px;
 }
 
 .cards {
@@ -15,6 +15,7 @@
 
 .mapboxgl-popup {
   max-width: 200px;
+  margin-bottom: 10px;
 }
 
 .mapboxgl-popup-content {
