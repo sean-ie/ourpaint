@@ -44,7 +44,7 @@ class PaintsController < ApplicationController
 
 
       redirect_to paint_path(@paint)
-    
+
 
     else
       render :new
@@ -63,6 +63,7 @@ class PaintsController < ApplicationController
   end
 
   def destroy
+    @paint = Paint.find(params[:id])
     @paint.destroy
   end
 
