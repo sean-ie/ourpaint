@@ -2,7 +2,7 @@
 
 <div class="banner">
   <div class="banner-content">
-    <h1>Our paint</h1>
+    <h1>OurPaint</h1>
     <center><p>Find second-hand paint in your neighbourhood</p></center>
 
     <div class="input-group mb-3 search-bar">
@@ -14,33 +14,52 @@
   </div>
 </div>
 
-<div class="aboutus-container">
+<div class="aboutus-container text-center mb-5">
   <div class="text-col">
-    <h2 class="home-about-h2">Our <strike>Paint</strike> Mission</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus, culpa, eos error odit consectetur aliquam earum id fugit eveniet incidunt obcaecati itaque! Totam earum animi, similique incidunt nam doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo dolorum iure accusantium placeat fugit! Doloribus voluptas, quibusdam nemo non nihil optio, harum sed commodi omnis repellendus quas nam dolorem.<p>
+    <h2 class="home-about-h2 mb-5">Our Mission</h2>
+    <p>OurPaint was launched to help stop excess paint going to landfills across the UK.</p>
+    <p>Central to this is our desire to create sharing micro-communities in neighbourhoods across the country.</p>
+    <p>We believe that these communities hold the key to keeping hazardous chemicals out of landfill, and keeping more money in people's wallets.</p>
   </div>
-  <div class="img-col">
   </div>
 </div>
 
-<div class="aboutus-container-2">
-  <div class="img-col">
-  </div>
-  <div class="text-col">
-    <h2 class="home-about-h2">Recycling facts</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus, culpa, eos error odit consectetur aliquam earum id fugit eveniet incidunt obcaecati itaque! Totam earum animi, similique incidunt nam doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo dolorum iure accusantium placeat fugit! Doloribus voluptas, quibusdam nemo non nihil optio, harum sed commodi omnis repellendus quas nam dolorem.<p>
+<div class="aboutus-container-2 mt-5">
+  <h2 class="home-about-h2 text-center mb-5">Paint facts</h2>
+
+  <div class="d-flex justify-content-center mb-5">
+
+    <div class="d-flex flex-column justify-content-center align-items-center px-4 mr-4">
+      <%= image_tag "wallet.png", class: "d-block mb-3", style: "width: 200px" %>
+      <p class="text-center mb-0">In 2020, the UK bought nearly £16 million litres of paint.</p>
+      <p class="text-center">This is <strong>bad</strong> for your wallet..</p>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center px-4 mx-5">
+      <%= image_tag "rubbish.png", class: "d-block mb-3", style: "width: 200px" %>
+      <p class="text-center mb-0">Approx 50 million litres of paint goes to landfill in the UK each year.</p>
+      <p class="text-center">This is <strong>bad</strong> for the environment.</p>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center px-4">
+      <%= image_tag "paint.png", class: "d-block mb-3", style: "width: 200px" %>
+      <p class="text-center">Only <strong>2%</strong> of leftover paint is recycled today.</p>
+    </div>
+
   </div>
 </div>
 
 <section>
   <div class="container">
-    <div><h1 class="carousel-h1">Our</h1></div>
+    <div><h1 class="carousel-h1">Our Community</h1></div>
     <div class="carousel-container carousel-small">
     <div class="card-container">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
+
             <%= image_tag "matthew_pic.jpg", class: "d-block w-100" %>
+
           </div>
           <div class="carousel-item">
             <%= image_tag "lorraine_pic.jpg", class: "d-block w-100" %>
@@ -61,7 +80,6 @@
     </div>
 
     </div>
-    <div><h1 class="carousel-h1">Community</h1></div>
   </div>
 </section>
 <br>
