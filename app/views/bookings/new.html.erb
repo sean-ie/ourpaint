@@ -1,19 +1,22 @@
 <div class="banner-bookings">
   <div><h1 class="show-title-h2 top-align">Book your paint</h1></div>
-  <div class="card-show">
-    <div class="card-image"><%= cl_image_tag(@paint.photo.key, width: 300, height: 300, crop: :fill) %></div>
+  <div class="paint-details-bookingform">
+      <div class="card-show">
+        <div class="card-image"><%= cl_image_tag(@paint.photo.key, width: 300, height: 300, crop: :fill) %></div>
         <div class="card-text">
           <h1><%= @paint.brand %></h1>
           <p><%= @paint.colour %></p>
           <p><%= @paint.volume %></p>
         </div>
-        <div class="card-map">
-          <%= render "form", booking: @booking %>
-        </div>
+     </div>
+     <div class="form-container">
+      <%= render "form", booking: @booking %>
     </div>
-  </div>
+   </div>
 </div>
 
+ 
+  
 <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-instagram"></i></a>
