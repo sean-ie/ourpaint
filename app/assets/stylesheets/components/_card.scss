@@ -5,8 +5,10 @@
 }
 
 .container-middle {
-  margin: 20%;
-  text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
 }
 
 .card {
