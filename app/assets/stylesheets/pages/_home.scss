@@ -112,3 +112,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.carousel-item > img {
+  object-fit: contain;
+}

@@ -4,3 +4,14 @@
 @import "profile";
 @import "show";
 @import "booking";
+
+.paint-index-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/paint-tins-highview.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: -150px;
+}
