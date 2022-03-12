@@ -4,9 +4,6 @@
  margin: 3%;
 }
 
-.horizontal-cards {
-
-}
 
 .cardsandmap {
   width: 90%;
@@ -52,22 +49,20 @@
 }
 
 .card-horizontal {
-  border-top: 3px solid var(--red);
+  border-top: 3px solid var(--veryLightGray);
   box-shadow: 0px 30px 40px -20px var(--grayishBlue);
   display: flex;
   justify-content: space-between;
-  padding: 2px;
-  margin: 1px;
+  padding: 3px;
+  margin: 2px;
   margin-bottom: 10px;
-  width: 1500px;
+  width: 400px;
   height: 100px;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
   overflow: hidden;
   object-fit: cover;
   background-color: white;
   border-radius: 5px;
-  text-decoration: none;
-  text-decoration-color: black;
 }
 
 
@@ -127,7 +122,7 @@
 
   .card-text h1 {
     margin-top: 0px;
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 .card-image {
