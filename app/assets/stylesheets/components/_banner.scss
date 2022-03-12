@@ -26,11 +26,9 @@
 }
 
 .banner-bookings {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("paint_brush.jpeg");
   background-size: cover;
   background-position: center;
@@ -52,15 +50,9 @@
 }
 
 .banner-show {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("white_canvas_background.jpeg");
   background-size: cover;
   background-position: center;
-  margin-top: -150px;
 
 
   // h1 {
@@ -92,10 +84,7 @@
 
 
  .login-wrapper {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
   text-align: center;
   flex-direction: column;
  }

@@ -4,6 +4,17 @@
  margin: 3%;
 }
 
+
+.cardsandmap {
+  width: 90%;
+  height: 40%;
+
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+  }
+
 .card {
   margin: 1px;
   width: 300px;
@@ -38,11 +49,14 @@
 }
 
 .card-horizontal {
+  border-top: 3px solid var(--veryLightGray);
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
   display: flex;
   justify-content: space-between;
-  padding: 2px;
-  margin: 1px;
-  width: 350px;
+  padding: 3px;
+  margin: 2px;
+  margin-bottom: 10px;
+  width: 400px;
   height: 100px;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
   overflow: hidden;
@@ -50,6 +64,22 @@
   background-color: white;
   border-radius: 5px;
 }
+
+.card-horizontal-content {
+  margin-left: 5px;
+  font-family: 'Permanent Marker';
+  color: brown;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.card-horizontal-brand {
+  font-family: 'Permanent Marker';
+  color: hsl(212, 78%, 27%);
+  text-shadow: none;
+}
+
+
+
 
 .card-horizontal > img {
   float: right;
@@ -92,8 +122,6 @@
   grid-template-columns: 300px;
   grid-template-rows: 250px 250px;
   grid-template-areas: "image" "text";
-
-  font-family: 'Courier New', Courier, monospace;
   border-radius: 4px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
@@ -102,12 +130,17 @@
     .card-text p {
     color: black;
     font-size: 15px;
+    font-family: 'Permanent Marker';
+    text-shadow: 0.5px 0.5px black;
     font-weight: 300;
   }
 
   .card-text h1 {
+    font-family: 'Permanent Marker';
+    color: brown;
+    text-shadow: 0.5px 0.5px black;
     margin-top: 0px;
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 .card-image {
@@ -134,4 +167,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.content {
+    background-color: var(--veryLightGray);
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+}
+
+.cards {
+    background-color: var(--veryLightGray);
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
 }

@@ -16,3 +16,10 @@
 //flatpickr
 @import "flatpickr/dist/flatpickr";
 @import "flatpickr/dist/themes/airbnb";
+
+.body-container {
+  > div {
+    padding-top: 100px;
+    min-height: 86vh;
+  }
+}
