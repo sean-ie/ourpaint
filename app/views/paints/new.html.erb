@@ -1,17 +1,20 @@
-<div>
+<div class="login-wrapper">
+  <div>
 
-  <h1>Fill in the form below to list your old paint</h1>
+    <h1>Fill in the form below to list your old paint</h1>
 
 
-  <div class="container paint-new">
+    <div class="container paint-new">
 
-      <div class="paint-new-form">
-        <%= render "form", paint: @paint %>
+        <div class="paint-new-form">
+          <%= render "form", paint: @paint %>
+        </div>
+      <div class="link-paint-new">
+        <%= link_to "Go back", paints_path, class: "btn btn-warning" %>
       </div>
-    <div class="link-paint-new">
-      <%= link_to "Go back", paints_path, class: "btn btn-warning" %>
     </div>
   </div>
-</div>
 
-<%= render 'shared/footer_relative' %>
+  <%= render 'shared/footer_relative' %>
+
+</div>

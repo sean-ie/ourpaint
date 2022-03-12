@@ -1,25 +1,16 @@
-<div class="card-product">
-  <div class="card-product-infos">
-    <h2><strong>Congratulations</strong>, you've made a booking!</h2>
+<div class="login-wrapper">
+
+  <div class="card-product">
+    <div class="card-product-infos">
+      <h2><strong>Congratulations</strong>, you've made a booking!</h2>
+    </div>
   </div>
-</div>
 
 
-<%= @booking.paint.colour%>
-<%= @booking.paint.volume%>
-<%= @booking.paint.address%>
-<%= cl_image_tag(@booking.paint.photo.key, height: 100, width: 100, crop: :fill) %>
+  <%= @booking.paint.colour%>
+  <%= @booking.paint.volume%>
+  <%= @booking.paint.address%>
+  <%= cl_image_tag(@booking.paint.photo.key, height: 100, width: 100, crop: :fill) %>
+  <%= render 'shared/footer_relative' %>
 
-<div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-  </div>
-  <div>
-    <h2 class="footer-h2">Our Paint</h2>
-  </div>
-  <div class="footer-copyright">
-    © OurPaint-2022
-  </div>
 </div>

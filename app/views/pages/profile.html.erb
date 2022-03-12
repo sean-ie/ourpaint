@@ -1,9 +1,13 @@
-<% if @bookings %>
-  <% @bookings.each do |booking| %>
-    <div>
-      <%= booking.paint.colour%>
-      <br>
-      <%= link_to "Relist Paint", edit_paint_path(booking.paint), class: "btn btn-success" %>
-    </div>
+<div class="login-wrapper">
+
+  <% if @bookings %>
+    <% @bookings.each do |booking| %>
+      <div>
+        <%= booking.paint.colour%>
+        <br>
+        <%= link_to "Relist Paint", edit_paint_path(booking.paint), class: "btn btn-success" %>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+ <%= render 'shared/footer_relative' %>
+</div>
