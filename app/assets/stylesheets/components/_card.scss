@@ -4,6 +4,20 @@
  margin: 3%;
 }
 
+.horizontal-cards {
+
+}
+
+.cardsandmap {
+  width: 90%;
+  height: 40%;
+
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+  }
+
 .card {
   margin: 1px;
   width: 300px;
@@ -38,18 +52,24 @@
 }
 
 .card-horizontal {
+  border-top: 3px solid var(--red);
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
   display: flex;
   justify-content: space-between;
   padding: 2px;
   margin: 1px;
-  width: 350px;
+  margin-bottom: 10px;
+  width: 1500px;
   height: 100px;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
   overflow: hidden;
   object-fit: cover;
   background-color: white;
   border-radius: 5px;
+  text-decoration: none;
+  text-decoration-color: black;
 }
+
 
 .card-horizontal > img {
   float: right;
@@ -134,4 +154,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.content {
+    background-color: var(--veryLightGray);
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+}
+
+.cards {
+    background-color: var(--veryLightGray);
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
 }
