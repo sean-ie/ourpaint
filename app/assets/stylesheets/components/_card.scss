@@ -123,15 +123,15 @@
   grid-template-rows: 250px 250px;
   grid-template-areas: "image" "text";
   border-radius: 4px;
-  background: rgb(224, 214, 214);
+  background: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
 
     .card-text p {
+    color: black;
+    font-size: 15px;
     font-family: 'Permanent Marker';
-    color: brown;
     text-shadow: 0.5px 0.5px black;
-    font-size: 25px;
     font-weight: 300;
   }
 
