@@ -65,6 +65,21 @@
   border-radius: 5px;
 }
 
+.card-horizontal-content {
+  margin-left: 5px;
+  font-family: 'Permanent Marker';
+  color: brown;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.card-horizontal-brand {
+  font-family: 'Permanent Marker';
+  color: hsl(212, 78%, 27%);
+  text-shadow: none;
+}
+
+
+
 
 .card-horizontal > img {
   float: right;
@@ -107,20 +122,23 @@
   grid-template-columns: 300px;
   grid-template-rows: 250px 250px;
   grid-template-areas: "image" "text";
-
-  font-family: 'Courier New', Courier, monospace;
   border-radius: 4px;
   background: rgb(224, 214, 214);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
 
     .card-text p {
-    color: red;
-    font-size: 15px;
+    font-family: 'Permanent Marker';
+    color: brown;
+    text-shadow: 0.5px 0.5px black;
+    font-size: 25px;
     font-weight: 300;
   }
 
   .card-text h1 {
+    font-family: 'Permanent Marker';
+    color: brown;
+    text-shadow: 0.5px 0.5px black;
     margin-top: 0px;
     font-size: 32px;
   }

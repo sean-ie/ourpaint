@@ -1,9 +1,10 @@
 <div>
         <%= link_to paint_path(paint) do  %>
           <div>
-            <h6><%= paint.colour %></h6>
-            <h6><%= paint.brand %></h6>
-            <h6><%= paint.volume %></h6>
+            <h6 class="popup-content"><%= paint.brand %></h6>
+            <h6 class="popup-content"><%= paint.colour %></h6>
+            <h6 class="popup-content"><%= paint.volume %></h6>
            </div>
            <% end %>
-           </div>
+          </div>
+</div>

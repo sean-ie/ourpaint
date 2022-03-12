@@ -8,9 +8,8 @@
               <%= link_to paint_path(paint) do  %>
                 <div class="card-horizontal">
                 <div>
-                  <h6><%= paint.colour %></h6>
-                  <h6><%= paint.brand %></h6>
-                  <h6><%= paint.volume %></h6>
+                 <h6 class="card-horizontal-brand"><%= paint.brand %></h6>
+                  <h4 class="card-horizontal-content"><%= paint.colour %></h4>
                 </div>
 
                 <%= cl_image_tag(paint.photo.key, height: 75, width: 75, crop: :fill) %>
@@ -22,7 +21,7 @@
           </div>
 
         <div id="map"
-          style="width: 100%; height: 624px;"
+          style="width: 100%; height: 675px; border-radius: 5px"
           data-markers="<%= @markers.to_json %>"
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
@@ -30,5 +29,3 @@
     </div>
 
   </div>
-
-<%= render 'shared/footer_relative' %>

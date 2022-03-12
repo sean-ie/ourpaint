@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  height: 624px;
+  height: 675px;
 }
 
 .cards {
@@ -16,9 +16,26 @@
 .mapboxgl-popup {
   max-width: 200px;
   margin-bottom: 10px;
+  font-family: 'Permanent Marker', !important;
 }
 
-.mapboxgl-popup-content {
+.popup-content {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Permanent Marker';
+  text-decoration: none;
+  color: black;
+}
+
+a:focus, a:visited, a:active {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: purple;
+  background-color: transparent;
+}
+
+.mapboxgl-popup-tip {
+   border: 10px solid transparent !important;
 }
