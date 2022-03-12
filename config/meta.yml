@@ -1,0 +1,5 @@
+meta_product_name: "OurPaint"
+meta_title: "OurPaint - Community-based paint recycling"
+meta_description: "Find second-hand paint in your neighbourhood"
+meta_image: "paint.png" # should exist in `app/assets/images/`
+#twitter_account: "@product_twitter_account"   # required for Twitter Cards
