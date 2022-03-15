@@ -153,7 +153,7 @@
 .card-text {
   grid-area: text;
   padding-top: 40px;
-  margin: 25px;
+  margin-top: 25px;
 }
 
 .card-map {
@@ -194,4 +194,71 @@
 
 .badge {
   margin: auto;
+}
+
+.badges-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.badges-container .badges-card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05);
+              inset: -5px, -5px, 5px rgba(255,255,255,0.5)
+              5px, 5px, 5px rgba(255,255,255,0.05),
+              -5px, -5px, 5px rgba(255,255,255,0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.badges-container .badges-card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.badges-container .badges-card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+
+.badges-container .badges-card .box .badge-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.badges-container .badges-card .box .badge-content h3{
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.badges-container .badges-card:hover .box .badge-content h3{
+  color: whitesmoke;
+}
+
+.badges-container .badges-card .box .badge-content h4{
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.badges-container .badges-card .box .badge-content p{
+  z-index: 1;
+  transition: 0.5s;
 }
