@@ -29,29 +29,40 @@
 <br>
 <br>
 
-  <div class="d-flex justify-content-center align-items-center px-4 mx-5">
+  <%# <div class="d-flex justify-content-center align-items-center px-4 mx-5"> %>
 
-
-        <div>
-        <h3 class="text-center">Your first booking</h3>
-        <h4>Nice one, you booked your first paint collection</h4>
-        <%= image_tag "trophy.png", class: "d-block mb-3 badge", style: "width: 200px" %>
+    <div class="badges-container">
+      <div class="badges-card">
+        <div class="box">
+          <div class="badge-content">
+            <h3>Your first booking</h3>
+            <h4>Nice one, you booked your first paint collection</h4>
+            <p><%= image_tag "trophy.png", class: "d-block mb-3 badge", style: "width: 200px" %></p>
+          </div>
         </div>
+      </div>
 
-        <div>
-        <h3 class="text-center">Paint superhero</h3>
-        <h4>Doing your bit to keep paint out of landfill</h4>
-        <%= image_tag "dog.png", class: "d-block mb-3 badge", style: "width: 200px" %>
+      <div class="badges-card">
+        <div class="box">
+          <div class="badge-content">
+            <h3>Paint superhero</h3>
+            <h4>Doing your bit to keep paint out of landfill</h4>
+            <p><%= image_tag "dog.png", class: "d-block mb-3 badge", style: "width: 200px" %></p>
+          </div>
         </div>
+      </div>
 
-        <div>
-        <h3 class="text-center">OurPaint family</h3>
-        <h4>You're one of us now! Never buy new paint again</h4>
-        <%= image_tag "teamwork.png", class: "d-block mb-3 badge", style: "width: 200px" %>
+      <div class="badges-card">
+        <div class="box">
+          <div class="badge-content">
+            <h3>OurPaint family</h3>
+            <h4>You're one of us now! Never buy new paint again</h4>
+            <p><%= image_tag "teamwork.png", class: "d-block mb-3 badge", style: "width: 200px" %></p>
+          </div>
         </div>
-
+      </div>
+    </div>
 
       </div>
       </div>
-  </div>
-<%= render 'shared/footer_relative' %>
+  <%# </div> %>
