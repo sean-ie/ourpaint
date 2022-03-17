@@ -126,6 +126,7 @@
   background: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
+  overflow: hidden;
 
     .card-text p {
     color: black;
@@ -326,4 +327,5 @@
 
 .card-title {
   font-family: 'Permanent Marker';
+}
 }
