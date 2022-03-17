@@ -184,12 +184,14 @@
 .card-product-infos{
     max-width: 400px;
     margin: auto;
-    background: white;
+    background: rgb(228, 224, 224);
+
 }
 
 .person {
   margin: auto;
   text-align: center;
+
 }
 
 .badge {
@@ -261,4 +263,19 @@
 .badges-container .badges-card .box .badge-content p{
   z-index: 1;
   transition: 0.5s;
+}
+
+.login-wrapper-profile {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-title {
+  font-family: 'Permanent Marker';
 }
