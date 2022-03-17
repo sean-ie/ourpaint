@@ -59,7 +59,7 @@ class PaintsController < ApplicationController
     @paint = Paint.find(params[:id])
     @paint.update(paint_params)
     #@paint.user = current_user
-    redirect_to root_path
+    redirect_to paint_path(@paint)
   end
 
   def destroy
