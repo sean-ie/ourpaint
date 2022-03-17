@@ -1,6 +1,22 @@
 <div class="login-wrapper">
 
-  <div class="card-product">
+  <div><h1 class="show-title-h2 top-align">Booking confirmed</h1></div>
+  <div class="aboutus-container">
+    <div class="profile-box">
+      <h1 class="profile-box-h1">Anna</h1>
+      <%= image_tag "happy-painter-profile.jpg", style: "width: 150px"%>
+      <%= cl_image_tag(@booking.paint.photo.key, height: 150, width: 150, crop: :fill) %>
+          <div class="booking-paint-info">
+            <p class="booking-paint-info-details"><%= @booking.paint.colour%></p>
+            <p class="booking-paint-info-details"><%= @booking.paint.volume%></p>
+            <p class="booking-paint-info-details"><%= @booking.paint.address%></p>
+            <p class="booking-paint-info-details">contact number: 07974389972</p>
+            <p class="booking-paint-info-details">pick up details: ring the top buzzer</p>
+          </div>
+    </div>
+  </div>
+
+  <%# <div class="card-product">
       <h1><strong>Congratulations</strong>, you've booked this paint</h1>
       <h2>You'll be collecting your paint from David</h2>
 
@@ -9,21 +25,19 @@
 
     <div class="paint-person-info d-flex">
     <div class="person"><%= image_tag "person.jpg", class: "d-block mb-3", style: "width: 200px"%>
-    </div>
+    <%# </div>
     <%= cl_image_tag(@booking.paint.photo.key, height: 100, width: 100, crop: :fill) %>
-    </div>
+    <%# </div>
 
       <div class="booking-paint-info">
         <%= @booking.paint.colour%>
-        <%= @booking.paint.volume%>
-        <%= @booking.paint.address%>
-      </div>
+        <%# <%= @booking.paint.volume%>
+        <%# <%= @booking.paint.address%>
+      <%# </div>
     </div>
-  </div>
+  </div> %>
 
-
-
-<h1 class="text-center mb-0">Well done! You've earned the following badges</h1>
+  <div><h1 class="show-title-h2 top-align">Badges Earned</h1></div>
 
   <%# <div class="d-flex justify-content-center align-items-center px-4 mx-5"> %>
 

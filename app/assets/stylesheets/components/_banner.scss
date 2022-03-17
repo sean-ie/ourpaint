@@ -89,4 +89,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("arty-background.jpeg");
+  background-size: cover;
+  background-position: center;
  }

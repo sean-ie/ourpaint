@@ -190,6 +190,9 @@
 .person {
   margin: auto;
   text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .badge {
@@ -261,4 +264,53 @@
 .badges-container .badges-card .box .badge-content p{
   z-index: 1;
   transition: 0.5s;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-box {
+  width: 475px;
+  // border: solid;
+  // border-color: aqua;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.profile-box-h1 {
+  font-family: 'Permanent Marker';
+  color: whitesmoke;
+  text-shadow: 0.5px 0.5px black;
+  margin-top: 0px;
+  font-size: 32px;
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.profile-image {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.booking-paint-info {
+  text-align: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.booking-paint-info-details {
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto";
+  text-shadow: 0.5px 0.5px black;
+  font-weight: 300;
 }
