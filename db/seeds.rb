@@ -21,7 +21,7 @@ paint1 = Paint.new(
   brand: "Dulux",
   colour: "Matt Emulsion - Cookie Dough",
   volume: "1L",
-  address: "1 Munster Square, London",
+  address: "143 Moorgate, London",
   user_id: user1.id,
 )
 
@@ -35,7 +35,7 @@ paint2 = Paint.new(
   brand: "Farrow & Ball",
   colour: "All White - Emulsion",
   volume: "0.5L",
-  address: "20 Monmouth Road, London",
+  address: "35 Old Street, London",
   user_id: user2.id,
 )
 
@@ -49,7 +49,7 @@ paint3 = Paint.new(
   brand: "Fired Earth",
   colour: "Silica White - Matt Emulsion",
   volume: "1.4L",
-  address: "1 Varndell Street, London",
+  address: "26 Saint John Street, London",
   user_id: user3.id,
 )
 
@@ -63,7 +63,7 @@ paint4 = Paint.new(
   brand: "Laura Ashley",
   colour: "Pale Silver",
   volume: "1L",
-  address: "22 Shaftesbury Avenue, London",
+  address: "12 Smithfield Street, London",
   user_id: user4.id,
 )
 
@@ -77,7 +77,7 @@ paint5 = Paint.new(
   brand: "Dulux",
   colour: "Blush Pink",
   volume: "0.5L",
-  address: "20 South Grove, London",
+  address: "St John's Lane, London",
   user_id: user5.id,
 )
 
