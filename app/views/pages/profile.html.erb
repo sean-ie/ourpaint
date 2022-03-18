@@ -1,20 +1,23 @@
-<h1 style="font-family:Permanent Marker; font-size: 100px;text-align:center">Your Paint Bookings</h1>
-<div class="login-wrapper-profile">
- <% if @bookings %>
-  <% @bookings.each do |booking| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h4 class="card-title">Paint Details</h4>
-        <div class='d-flex align-items-center'>
-          <%= cl_image_tag(booking.paint.photo.key, height: 85, width: 85, crop: :fill) %>
-          <div class="ml-3">
-            <p><%= booking.paint.colour%></p>
-            <p><%= booking.paint.brand %></p>
+<div class="login-wrapper">
+  <h1 style="font-family:Permanent Marker; font-size: 100px;text-align:center">Your Paint Bookings</h1>
+  <div class="login-wrapper-profile">
+  <% if @bookings %>
+    <% @bookings.each do |booking| %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h4 class="card-title">Paint Details</h4>
+          <div class='d-flex align-items-center'>
+            <%= cl_image_tag(booking.paint.photo.key, height: 85, width: 85, crop: :fill) %>
+            <div class="ml-3">
+              <p><%= booking.paint.colour%></p>
+              <p><%= booking.paint.brand %></p>
+            </div>
           </div>
+          <%= link_to "Relist Paint", edit_paint_path(booking.paint), class: "btn btn-success profile-card-btn" %>
         </div>
-        <%= link_to "Relist Paint", edit_paint_path(booking.paint), class: "btn btn-success profile-card-btn" %>
       </div>
-    </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
+
 </div>
