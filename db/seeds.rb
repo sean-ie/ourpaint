@@ -21,7 +21,7 @@ paint1 = Paint.new(
   brand: "Dulux",
   colour: "Matt Emulsion - Cookie Dough",
   volume: "1L",
-  address: "23 Andrews Walk, London",
+  address: "1 Munster Square, London",
   user_id: user1.id,
 )
 
@@ -49,7 +49,7 @@ paint3 = Paint.new(
   brand: "Fired Earth",
   colour: "Silica White - Matt Emulsion",
   volume: "1.4L",
-  address: "1 Beatty Street, London",
+  address: "1 Varndell Street, London",
   user_id: user3.id,
 )
 
